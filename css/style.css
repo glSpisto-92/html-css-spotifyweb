@@ -5,12 +5,84 @@
   box-sizing: border-box;
 }
 
-/* Mix */
+body{
+  height: 100vh;
+}
 
-/* Typo */
+main{
+  height: calc(100% - 80px);
+  display: flex;
+  overflow: auto;
+}
+
+aside{
+  height: 100%;
+}
+
+/* Mix */
+.text_center{
+  text-align: center;
+}
+
+.color_w{
+  color: #fff;
+}
+
+/* typo */
+.text_up{
+  text-transform: uppercase;
+}
 
 /* Aside/header */
+.aside_container{
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  background: lightgrey;
+}
+
+.upgrade{
+  position: fixed;
+  top: 0;
+  left: 300px;
+  width: 100%;
+  height: 80px;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 /* Main */
+.main_content{
+  width: 100%;
+  padding: 20px;
+  margin-top: 80px;
+  background: pink;
+}
 
-/* Footer */
+.nav_top ul{
+  display: flex;
+  justify-content: center;
+}
+
+.nav_top ul li{
+  list-style: none;
+  padding: 10px;
+}
+.nav_top ul a{
+  text-decoration: none;
+}
+
+.music_content{
+  overflow:
+}
+
+.box{
+  display: inline-block;
+}
+
+/* footer */
+.nav_bottom{
+  width: 100%;
+  height: 80px;
+  background: lightgreen;
+}
