@@ -12,7 +12,6 @@ body{
 main{
   height: calc(100% - 80px);
   display: flex;
-  overflow: auto;
 }
 
 aside{
@@ -28,6 +27,10 @@ aside{
   color: #fff;
 }
 
+.color_grey{
+  color: #919496;
+}
+
 /* typo */
 .text_up{
   text-transform: uppercase;
@@ -35,16 +38,68 @@ aside{
 
 /* Aside/header */
 .aside_container{
-  width: 300px;
+  width: 250px;
   height: 100%;
-  padding: 20px;
-  background: lightgrey;
+  padding: 15px;
+  background: #000;
+}
+
+.spotify_logo{
+  margin-bottom: 20px;
+}
+
+.spotify_logo img{
+  height: 40px;
+}
+
+.home li {
+  list-style: none;
+}
+
+.home li a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #919496;
+}
+
+.home i{
+  font-size: 24px;
+  padding: 0 10px 10px 0;
+}
+
+#home_white{
+  color: #fff;
+}
+
+.playlist_aside{
+  margin-top: 20px;
+  list-style: none;
+}
+
+.playlist_aside li{
+  padding: 10px 0;
+}
+
+.playlist_aside i {
+  font-size: 32px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.playlist_aside a{
+  text-decoration: none;
+  color: #919496;
+  font-size: 14px;
+}
+
+.playlist_aside h4{
+  color: #fff;
 }
 
 .upgrade{
   position: fixed;
   top: 0;
-  left: 300px;
+  left: 250px;
   width: 100%;
   height: 80px;
   z-index: 100;
@@ -55,8 +110,9 @@ aside{
 .main_content{
   width: 100%;
   padding: 20px;
-  margin-top: 80px;
+  padding-top: 80px;
   background: pink;
+  overflow-y: scroll;
 }
 
 .nav_top ul{
@@ -72,10 +128,6 @@ aside{
   text-decoration: none;
 }
 
-.music_content{
-  overflow:
-}
-
 .box{
   display: inline-block;
 }
@@ -84,5 +136,7 @@ aside{
 .nav_bottom{
   width: 100%;
   height: 80px;
+  position: fixed;
   background: lightgreen;
+  z-index: 101;
 }
