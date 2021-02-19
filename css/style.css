@@ -11,7 +11,7 @@ body{
 }
 
 main{
-  height: calc(100% - 50px);
+  height: calc(100% - 100px);
   display: flex;
 }
 
@@ -182,38 +182,90 @@ hr{
   margin-bottom: 15px;
 }
 
-
 .music_content{
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .music_content small{
   color: #919496;
 }
 
-/* .box {
+ .box {
+  width: calc(100% / 6);
+  padding-right: 15px;
+}
+
+.box img{
   width: 100%;
 }
-.box img{
-  width: calc( (100% / 6) - 15px );
-  margin-right: 15px;
-} */
-
 
 /* footer */
 .nav_bottom{
-  width: 100%;
   position: fixed;
+  width: 100%;
+  height: 100px;
   background: #282828;
-  z-index: 101;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .nav_bottom img{
   width: 50px;
 }
 
-.nav_bottom_left{
+.nav_bottom_left li, .nav_bottom_right li{
+  padding: 10px;
+}
+
+.nav_bottom_left ul, .nav_bottom_right ul, .nav_bottom_center ul{
   display: flex;
+  list-style: none;
+}
+
+.nav_bottom_left a, .nav_bottom_right a, .nav_bottom_center a{
+  color: #fff;
+}
+
+.nav_bottom_center i{
+  font-size: 28px;
+  padding: 14px;
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px){
+  .box {
+   width: calc((100% / 4) - 15px);
+ }
+}
+
+@media screen and (max-width: 768px){
+  .box {
+   width: calc((100% / 2) - 15px);
+ }
+}
+
+@media screen and (max-width: 540px){
+  .box {
+   width: calc((100% / 2) - 15px);
+ }
+
+ .home, .playlist_aside, .aside_bottom_content{
+   visibility: hidden;
+ }
+
+ .aside_container{
+   width: 58px;
+   padding: 12px;
+ }
+
+ .home i{
+   visibility: visible;
+   padding: 5px;
+ }
 }
