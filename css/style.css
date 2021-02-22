@@ -425,6 +425,14 @@ hr{
  .nav_bottom_left p {
    font-size: 12px;
  }
+
+ .playlist_aside li{
+   padding: 6px 0;
+ }
+
+ .aside_bottom_content{
+   font-size: 12px;
+ }
 }
 
 
