@@ -63,7 +63,7 @@ hr{
 }
 
 .home{
-  height: 100px;
+  height: 120px;
 }
 
 .home li {
@@ -90,7 +90,7 @@ hr{
 }
 
 .playlist_aside{
-  height: calc(100% - 210px);
+  height: calc(100% - 300px);
   margin-top: 20px;
   padding-left: 15px;
   list-style: none;
@@ -117,8 +117,8 @@ hr{
 }
 
 .aside_bottom_content{
-  height: 50px;
   padding-left: 15px;
+  height: 80px;
 }
 
 .aside_bottom_content i {
@@ -375,6 +375,17 @@ hr{
   .box {
    width: calc((100% / 4) - 15px);
  }
+
+ .nav_bottom_center{
+   order: -1;
+   flex-basis: 100%;
+   margin-bottom: 20px;
+ }
+
+  .nav_bottom{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 
@@ -414,5 +425,22 @@ hr{
    border-radius: 20px;
    padding: 5px 10px;
    font-size: 12px;
+ }
+
+ .nav_bottom_left{
+   order: -1;
+   margin-bottom: 20px;
+ }
+
+ .bar{
+   width: 200px;
+ }
+
+ .nav_bottom_center i{
+   font-size: 16px;
+ }
+
+ .nav_bottom_right .bar{
+   width: 120px;
  }
 }
