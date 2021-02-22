@@ -171,6 +171,9 @@ hr{
   padding-top: 10px;
   display: flex;
   justify-content: center;
+}
+
+.nav_top ul{
   flex-wrap: wrap;
 }
 
@@ -277,7 +280,7 @@ hr{
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  /* height: 100px; */
   background: #282828;
   display: flex;
   justify-content: space-between;
@@ -324,10 +327,9 @@ hr{
 }
 
 .nav_bottom_center i{
-  font-size: 28px;
+  font-size: 22px;
   padding: 14px;
 }
-
 
 .nav_bottom_center ul{
   justify-content: center;
@@ -344,17 +346,10 @@ hr{
   display: flex;
   height: 3px;
   background: grey;
-  width: 300px;
+  width: 400px;
 }
 
 .bar:before{
-  content: '';
-  height: 3px;
-  background: #fff;
-  width: 50px;
-}
-
-.:before{
   content: '';
   height: 3px;
   background: #fff;
@@ -399,6 +394,9 @@ hr{
    width: 58px;
  }
 
+ .spotify_logo{
+   margin-left: 12px;
+ }
 
  .home i{
    visibility: visible;
