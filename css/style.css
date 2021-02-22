@@ -417,6 +417,9 @@ hr{
    font-size: 14px;
    padding: 8px;
  }
+ .nav_bottom_right i, .nav_bottom_left i{
+   font-size: 12px;
+ }
 
  .nav_bottom_left img{
    width: 40px;
