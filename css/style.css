@@ -130,6 +130,7 @@ hr{
   color: #919496;
 }
 
+/* sezione nav top (in evidenza,upgrade e button) */
 .upgrade{
   position: fixed;
   top: 0;
@@ -156,15 +157,6 @@ hr{
 
 .btn_up:hover{
   transform: scale(1.2);
-}
-
-/* Main */
-.main_content{
-  width: 100%;
-  padding: 20px;
-  padding-top: 80px;
-  background: #141922;
-  overflow-y: scroll;
 }
 
 .nav_top{
@@ -207,6 +199,15 @@ hr{
   visibility: visible;
 }
 
+/* Main */
+.main_content{
+  width: 100%;
+  padding: 20px;
+  padding-top: 80px;
+  background: #141922;
+  overflow-y: scroll;
+}
+
 .title_section_music h2{
   margin: 30px 0 15px 0;
 }
@@ -214,6 +215,7 @@ hr{
   margin-bottom: 15px;
 }
 
+/* sezione contenuti icone musica */
 .music_content{
   display: flex;
   flex-wrap: wrap;
@@ -242,6 +244,7 @@ hr{
   border-radius: 50%;
 }
 
+/* sezione overlay img */
 .overlay {
   position: absolute;
   top: 0;
@@ -366,6 +369,7 @@ hr{
   margin: auto;
 }
 
+
 /* RESPONSIVE */
 @media screen and (max-width: 1024px){
   .box {
@@ -411,5 +415,4 @@ hr{
    padding: 5px 10px;
    font-size: 12px;
  }
-
 }
