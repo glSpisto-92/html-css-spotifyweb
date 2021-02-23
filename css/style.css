@@ -482,12 +482,22 @@ hr{
    margin-left: 12px;
  }
 
- .home i{
+ .home i, img{
    visibility: visible;
  }
 
+ .aside_bottom_content span{
+   display: none;
+ }
+
+ .home img {
+   margin-left: 5px;
+ }
+
  .aside_bottom_content i{
-   visibility: visible;
+  visibility: visible;
+  padding: 5px;
+  font-size: 22px;
  }
 
  .upgrade{
@@ -500,17 +510,12 @@ hr{
    font-size: 12px;
  }
 
-  .nav_bottom{
-    flex-wrap: wrap;
-  }
-
  .nav_bottom_left{
-   order: -1;
    margin-bottom: 20px;
  }
 
  .bar{
-   width: 200px;
+   width: 150px;
  }
 
  .nav_bottom_center i{
@@ -518,7 +523,7 @@ hr{
  }
 
  .nav_bottom_right .bar{
-   width: 120px;
+   max-width: 80px;
  }
 
  .nav_bottom_left{
@@ -529,6 +534,14 @@ hr{
    font-size: 12px;
  }
 }
+
+
+@media screen and (max-width: 400px){
+.nav_bottom_right{
+  display: none;
+  }
+}
+
 
 @media screen and (max-height: 350px){
   .upgrade{
