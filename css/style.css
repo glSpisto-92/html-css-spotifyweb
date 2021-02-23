@@ -133,6 +133,7 @@ hr{
 .aside_bottom_content i {
   padding: 10px 5px 10px 0;
   color: #fff;
+  font-size: 22px;
 }
 
 .aside_bottom_content > a, hr {
@@ -317,6 +318,13 @@ hr{
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
+}
+
+.nav_bottom_left p{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .nav_bottom_left ul, .nav_bottom_right ul, .nav_bottom_center ul{
