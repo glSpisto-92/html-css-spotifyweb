@@ -66,12 +66,17 @@ hr{
   height: 120px;
 }
 
+.home img{
+  width: 20px;
+  margin-right: 5px;
+}
+
 .home li {
   list-style: none;
   padding-left: 15px;
 }
 
-.home li:first-child{
+.home li:hover{
   border-left: 2px solid green;
 }
 
@@ -94,6 +99,10 @@ hr{
   margin-top: 20px;
   padding-left: 15px;
   list-style: none;
+}
+
+.playlist_aside ul{
+  height: calc(100% - 60px);
   overflow-y: auto;
 }
 
@@ -114,11 +123,11 @@ hr{
 
 .playlist_aside h4{
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .aside_bottom_content{
   padding-left: 15px;
-  height: 80px;
 }
 
 .aside_bottom_content i {
@@ -251,7 +260,7 @@ hr{
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100%;
+  transition: 0.4s all;
 }
 
 .overlay:hover{
@@ -301,13 +310,13 @@ hr{
 }
 
 .nav_bottom_left, .nav_bottom_right{
-  flex-basis: 20%;
+  flex-basis: 25%;
 }
 
 .nav_bottom_center{
   display: flex;
   flex-direction: column;
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
 
 .nav_bottom_left ul, .nav_bottom_right ul, .nav_bottom_center ul{
@@ -324,9 +333,13 @@ hr{
 }
 
 .folder_heart{
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
   display: flex;
   margin-left: 10px;
+}
+.folder_heart i{
+  padding: 5px;
 }
 
 .nav_bottom_center i{
@@ -371,6 +384,7 @@ hr{
 
 
 /* RESPONSIVE */
+
 @media screen and (max-width: 1024px){
   .box {
    width: calc((100% / 4) - 15px);
@@ -401,6 +415,10 @@ hr{
   .special_play{
     font-size: 40px;
   }
+
+  .nav_bottom_left p {
+    font-size: 14px;
+  }
 }
 
 
@@ -430,15 +448,11 @@ hr{
  }
 
  .nav_bottom_left p {
-   font-size: 12px;
+   font-size: 10px;
  }
 
  .playlist_aside li{
    padding: 6px 0;
- }
-
- .aside_bottom_content{
-   font-size: 12px;
  }
 }
 
@@ -461,6 +475,10 @@ hr{
  }
 
  .home i{
+   visibility: visible;
+ }
+
+ .aside_bottom_content i{
    visibility: visible;
  }
 
@@ -502,4 +520,10 @@ hr{
  .nav_top li{
    font-size: 12px;
  }
+}
+
+@media screen and (max-height: 350px){
+  .upgrade{
+    visibility: hidden;
+  }
 }
